@@ -43,6 +43,7 @@ Day4(2025.5.31):
 	定义字体
 
 Day5(2025.6.1):
+
 	背景属性(index1.html)：
 			background-image: url("images/Niko.jpg");
 
@@ -60,15 +61,20 @@ Day5(2025.6.1):
 
 	文本属性(index2.html)：
 			text-align: left;  // left,right,center
+
 			text-decoration: underline;	//underline, overline, line-through
+
 			text-transform: captialize; //uppercase, lowercase
+
 			text-indent: 50px
 
 	表格属性(index3.html)
 			border: 1px, red, solid;
+
 			border-collapse: collapse; // 折叠：折叠成单表格.
+
 			水平对齐: td{text-align: center}
-			垂直对齐: td{height: 50px, vertical-align: bottom;} // top,middle,bottom
+			垂直对齐: td{height: 50px, vertical-align: bottom;} // top, middle, bottom
 			文本和表格之间填充: padding: 20px
 			字体颜色和表格内颜色：			
 			background-color: blue;  // 表格内颜色
