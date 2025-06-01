@@ -52,37 +52,40 @@ Day4(2025.5.31):
 Day5(2025.6.1):
 
 	背景属性(index1.html)：
-			background-image: url("images/Niko.jpg");
+		background-image: url("images/Niko.jpg");
 
-			background-color: aqua
+		background-color: aqua
 
-			background-repeat: no-repeat; 
-			//不平铺，水平/垂直平铺
+		background-repeat: no-repeat; 
+		//不平铺，水平/垂直平铺
 
-			background-size: cover;  
-			//第一个值宽度第二个值高度，如果设置第一个，第二个为auto（length->宽度高度，percentage->百分比，cover->保持图片纵横比并将图片缩放成完全覆盖背景区域的最小大小，contain->保持图片纵横比并将图片缩放成适合背景定位区域的最大大小）
+		background-size: cover;  
+		//第一个值宽度第二个值高度，如果设置第一个，第二个为auto（length->宽度高度，percentage->百分比，cover->保持图片纵横比并将图片缩放成完全覆盖背景区域的最小大小，contain->保持图片纵横比并将图片缩放成适合背景定位区域的最大大小）
 
-			background-position: left center; 
-			//起始位置，默认值为 0% 0%
+		background-position: left center; 
+		//起始位置，默认值为 0% 0%
 
 
 	文本属性(index2.html)：
-			text-align: left;  // left,right,center
+		text-align: left;  // left,right,center
 
-			text-decoration: underline;	//underline, overline, line-through
+		text-decoration: underline;	//underline, overline, line-through
 
-			text-transform: captialize; //uppercase, lowercase
+		text-transform: captialize; //uppercase, lowercase
 
-			text-indent: 50px
+		text-indent: 50px
 
 	表格属性(index3.html)
-			border: 1px, red, solid;
+		border: 1px, red, solid;
 
-			border-collapse: collapse; // 折叠：折叠成单表格.
+		border-collapse: collapse; // 折叠：折叠成单表格.
 
-			水平对齐: td{text-align: center}
-			垂直对齐: td{height: 50px, vertical-align: bottom;} // top, middle, bottom
-			文本和表格之间填充: padding: 20px
-			字体颜色和表格内颜色：			
+		水平对齐: td{text-align: center}
+		
+		垂直对齐: td{height: 50px, vertical-align: bottom;} // top, middle, bottom
+
+		文本和表格之间填充: padding: 20px
+
+		字体颜色和表格内颜色：			
 			background-color: blue;  // 表格内颜色
 			color: azure;	// 字体颜色
