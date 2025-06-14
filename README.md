@@ -89,3 +89,43 @@ Day5(2025.6.1):
 		字体颜色和表格内颜色：			
 			background-color: blue;  // 表格内颜色
 			color: azure;	// 字体颜色
+
+
+Day6(2025.6.14):
+	后代选择器：ul li { color : red}  所有ul中的li标签都会生效，包括嵌套其他的标签里的li标签.
+	子代选择器：ul>li { color : red}  只有ul子代里的li才生效
+	相邻兄弟选择器：ul+li{ color : red} 只有和ul相邻的第一个li才会生效,只能向下选择.
+	通用兄弟选择器：ul~li{ color : red} 和ul相邻的所有li都会生效，向下选择.
+	[index1.html - index6.html]
+
+	Box Model(盒子模型):
+		所有的html元素都可看作盒子，CSS盒模型本质上是一个盒子，封装周围的html元素，包括：外边距(margin)，边框(border),内边距(padding),和实际内容(content)
+		e.g.
+		<style>
+			div{
+				color: red;
+				padding: 50px;
+				padding: 20px 50px;
+				/*20px:上下 50px:左右*/
+				/*padding可分为上下左右, e.g. padding-left : 50px;*/
+			}
+		</style>
+
+	Flex box(弹性盒模型):
+		弹性盒是一种当页面需要适应不同的屏幕大小以及设备类型时确保元素拥有恰当行为的布局方式.
+		弹性盒子由弹性容器(Flex container)和弹性子元素(Flex item)构成,通过设置display属性的值为flex将其定义为弹性容器.
+		默认弹性盒里的内容横向摆放.
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;/*内容属性应用在弹性容器上，把弹性项沿着弹性容器的主轴线对齐*/
+		align-items: flex-start | flex-end | center /*设置或检索弹性盒子在侧轴方向上的对齐方式*/
+		子元素上的属性：flex-grow/flex. 权重占比：e.g.
+		.box1{
+			flex:3;
+		}
+		.box2{
+			flex:1;
+		}
+		.box3{
+			flex:1;
+		}
