@@ -129,3 +129,42 @@ Day6(2025.6.14):
 		.box3{
 			flex:1;
 		}
+
+Day6(2025.6.18):
+	浮动: 
+			(1)浮动以后使元素脱离了文档流.
+			(2)浮动只有左右浮动,没有上下浮动.
+		float: left
+
+		浮动副作用:
+			(1)浮动元素会造成父元素高度塌陷
+			(2)后续元素会受到影响
+
+		清除浮动:
+			(1)父元素设置高度: height: 10px
+			(2)受影响的元素增加clear属性: clear: both -> 左浮动或者右浮动
+			(3)overflow清除浮动: overflow: hidden; clear: both
+			(4)伪对象方式:		
+				.container::after{
+					content: "";
+					display: block;
+					clear: both;
+				}
+
+	定位:
+			position属性指定了元素的定位类型.
+			relative: 相对定位(index4.html)
+			absolute: 绝对定位(index5.html)
+			fixed: 固定定位
+			其中，绝对定位和固定定位会脱离文档流(有压盖的问题存在)
+			设置定位之后，可以使用四个方向值进行调整位置: left, top, right, bottom
+		*设置定位之后，相对定位和绝对定位是相对于具有定位的父级元素进行位置调整，如果父级元素没有定位，则继续向上寻找，直到顶层文档*
+	Z-index
+		z-index属性设置元素的堆叠顺序，拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面
+		.box1{
+			z-index:100
+		}
+		.box2{
+			z-index:50
+		}
+		box1的元素覆盖box2的元素
